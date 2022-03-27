@@ -1,19 +1,24 @@
 import React from 'react';
-import 'antd/dist/antd.css'; 
+import 'antd/dist/antd.css';
 import Notes from './pages/Notes/Notes';
-import { PageHeader } from 'antd';
+import { Divider, PageHeader, Typography } from 'antd';
 import { state } from './pages/Notes/dataForNotes';
+import './app.scss'
 
 function App(): JSX.Element {
+  const { Text } = Typography;
+
   return (
-    <div className="App">
-       <PageHeader
-            className="site-page-header"
-            onBack={() => null}
-            title="Notes"
-            subTitle="List notes"
-        />
-      <Notes documentState={state}/>
+    <div className="app">
+      <PageHeader
+        className="site-page-header"
+        title="Notes"
+        subTitle="List notes"
+      />
+       <Divider />
+      <div className="app__notes" >
+        <Notes documentState={state} />
+      </div>
     </div>
   );
 }

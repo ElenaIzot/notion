@@ -1,4 +1,4 @@
-import { DocumentState } from "./modules";
+import { DocumentState } from "../../modules";
 
 export const state: DocumentState = {
   title: {

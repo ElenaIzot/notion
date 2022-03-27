@@ -1,0 +1,32 @@
+.notes {
+  margin-left: 150px;
+}
+
+.list {
+  padding-bottom: 6px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__elements {
+    margin-top: 26px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin-left: 16px;
+  }
+}
